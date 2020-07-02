@@ -1,0 +1,49 @@
+{
+    "prompt": "A post is about Federal Budget if refers to mentions of how the federal government budgets and spends itsmoney. Do not label state funds or expenditures as federal. Concepts associated with the federal budget are commonly the federal deficit, national debt and military spending.\npost: {}\nq: Does this post discuss Federal Budget (yes or no)?\na:",
+    "data": {
+        "queries": [
+            "Healthcare",
+            "The environment and global warming and no one cares",
+            "Happy anniversary you two kids...",
+            "27 weeks into pregnancy is when your belly button disappears. #illseeyousomeday",
+            "Trump says nothing against Nazi's in the streets and white terrorism. Yet he blast someone who does.. A Black Man... racism at its finest",
+            "poor leadership",
+            "Dick's is immediately ending its sales of assault-style rifles and requiring all customers to be older than 21 to buy a firearm at its stores. The sporting goods chain will also no longer sell high-capacity magazines.",
+            "Does any tv show have a bigger drop off in quality than True Detective Season 1 to season 2?",
+            "Lack of trust or faith in God/Christ. Too much faith in humans. Not saying we shouldn't trust each other but people except super-human @time",
+            "Congratulations! While we are all sidetracked by Trump/Pence and the NFL, Trump vs. Puerto Rico, Harvey Weinstein & the Sexual Predation of All Hollywood, the Russian Hacking of the election, or the MLB American League Division Playoffs this week, the following bills have been introduced in the House of Representatives: 1. HR 861 to Terminate the Environmental Protection Agency 2. HR 610 - Vouchers for Public Education (which may end free public education as we know it) 3. HR 899 to Terminate the Department of Education (which may lead to greater disparity between states but nobody who uses public education ever moves so it's all good) 4. HR 69 to Repeal the Rule Protecting Wildlife 5. HR 370 to Repeal the Affordable Care Act 6. HR 354 to De-fund Planned Parenthood (exactly none of your tax dollars go toward abortion services) 7. HR 785 - National \"Right to Work\" (this one is actually a 'Right to fire you whenever your boss feels like it\" law, and it would effectively end unions) 8. HR 83 - Mobilizing Against Sanctuary Cities Bill 9. HR 147 to Criminalize Abortion (\u201cPrenatal Nondiscrimination Act\u201d) (these private decisions should not be made by your legislator and employer) 10. HR 808 to Impose Sanctions Against Iran (even though they are in compliance with the agreement according to those in the know)  Please copy/paste and share widely! (Copying and pasting works better than sharing a post like this.)",
+            "Went to bed about 8:30.  Dogs woke me up to go potty  about 1:30, and I heard that the message machine had the following info; this also on Marcus HS FB page:  MHS/Marcus 9 Notice | Feb. 15 Feb. 15, 2018 [9:45 p.m.]  Marcus families,  We apologize for the late notice, but we know emotions are running high for many students and parents after today\u2019s situation on campus. We know the rumor mill is in full effect tonight, so we want to take a minute to address what we know.   The Flower Mound Police Department has received calls regarding a rumor of a threat to campus. We are taking these threats seriously, although at this point we do not have any information we believe is a credible threat.   There will be an increased police presence on campus tomorrow to ensure the safety and security of our students and staff.  If your student has any credible information, please contact the Flower Mound Police Department at 972-539-0525.  We will continue to closely monitor the situation and will inform you of any further developments.  Gary Shafferman Principal Marcus High School  I don't want to be reactionary, but is there enough well-trained police presence that will be on campus today to avert any possible crisis? Ninety nine  percent certain a shooter/bomber isn't going to announce intentions in advance, but do I want to take that other 1 percent risk with my child's life?  I truly think there is far more risk when no announcement is made--didn't happen at any of the previous shootings.  BUT ... that 1 percent chance.  Not to mention the anxiety factor for students (plus teachers and staff):  How effective can they be with tests and other classwork with that threat looming?    If by chance my child goes to school today, I will be right there beside him.  All day.  We can't let panic rule our lives, but we must exercise common sense: What constitutes a \"credible threat?\"    Why wasn't school locked down yesterday, and why weren't parents of students at neighboring schools notified with an LISD-wide call, email and/or letter?  What type of threat did the FM police receive?  What will police presence at school entail?  Will there be enough police to thwart any possible attack?  Will backpacks/purses be checked, now and in the future?  I do think the school is doing the right thing when they announced about yesterday's situation that they would check  \"if disciplinary action was necessary\" with the boy who had a gun in his backpack.  I've always felt that the \"zero tolerance\" policy was so wrong:  students were \"convicted\" without an investigation of all circumstances.  I still remember a story from a few years ago when a boy in another state couldn't get his vehicle to start, didn't want to be late for school, so grabbed his dad's truck and got there on time.  Only to be arrested because his dad had a hunting rifle in the truck.  The boy was expelled, didn't graduate, and lost college scholarships.  A career needlessly lost, and a reputation marred because someone didn't take time for an objective investigation.  We have to keep some faith in life and humanity instead of feeding on fear.  Yet...there's that 1 percent:  We don't want our children massacred.   How do we ease our children's fears?  Better yet, how do parents and school administrators reach a rational decision?  We're in uncharted waters, and somewhere there is a solution.  Let's work together to find it.  Perhaps start by reinstituting the federal law dismantled last February.",
+            "I have nothing because without a care for self is what I'VE become a person that not even the rejects or the burderns don't even want around the JollyLESS ABANDONED FOOL. Kicked in the face till my skull cracks with hurtful words of the same blood but you see its deeper then that my heart is cold because it was murdered by the person that I call my blood your ruthlessly ways will soon kick you in the face how does that taste you get what u give and everything you give was with hate for your own ways you took it out on the one that You've made but you can't say sorry because now there gon and it's to late and now your talking to there grave only if you would of had more love. To late....",
+            "That the president of this country is a bully and a liar and sides more with Russia than his own legal system.",
+            "The last few days I've been posting shit maybe I shouldn't have but I was mad . Either way I was wrong and i apologize for my behavior.",
+            "Hermosa!!!! <3 Un angelito de cuatro patas!\ud83d\ude0d\ud83d\ude0d\u2764\ufe0f",
+            "None",
+            "Great to have",
+            "Twinnies! \ud83d\ude18",
+            "Sure, who needs medical insurance or social security?? Let's just go ahead and \u2702\u2702",
+            "Government officials not working in our best interest "
+        ],
+        "preds": [
+            " yes",
+            " yes",
+            " No",
+            " yes",
+            " yes",
+            " yes",
+            " No.",
+            " No",
+            " yes",
+            " No",
+            " yes",
+            " yes",
+            " No",
+            " No",
+            " No",
+            " yes",
+            " Yes",
+            " No",
+            " No",
+            " No"
+        ]
+    }
+}

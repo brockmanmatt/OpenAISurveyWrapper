@@ -3,10 +3,45 @@
 __all__ = ['wrapper']
 
 # Cell
-import openai, pandas, numpy
+import openai, pandas, numpy, datetime, json, os
 
 # Cell
 class wrapper:
     """
-    Wrapper holds the OpenAI
+    Wrapper holds the OpenAI API
     """
+
+    autosave=False
+
+    def __init__(self, outdir="queries"):
+        self.outdir = outdir
+        os.makedirs(outdir, exist_ok=True)
+
+    def add_key(self, key:str):
+        """
+        sets the openai api key
+        """
+        openai.api_key = key
+
+    def toggleAutoSave(self, status:bool):
+        """
+        set self.autosave to true or false
+        """
+        self.autosave=status
+
+    def query(self, **kwargs):
+        """
+        send kwargs to the API
+        """
+
+        r=""
+
+        print(kwargs)
+
+        r = openai.Completion.create(**kwargs)
+
+        if self.autosave:
+            with open("{}/{}".format(self.outdir, datetime.datetime.now().strftime("%Y%m%d%H%m%S")), "w") as fh:
+                json.dump({"promt":kwargs["prompt"], "response":r}, fh, indent=4)
+
+        return r

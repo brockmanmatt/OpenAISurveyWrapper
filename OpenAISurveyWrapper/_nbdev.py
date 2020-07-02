@@ -2,7 +2,8 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"wrapper": "00_wrapper.ipynb"}
+index = {"wrapper": "00_wrapper.ipynb",
+         "survey": "01_survey.ipynb"}
 
 modules = ["wrapper.py",
            "survey.py"]

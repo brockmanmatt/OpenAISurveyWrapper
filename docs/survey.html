@@ -34,6 +34,607 @@ description: "does stuff, tbd."
 </div>
     {% endraw %}
 
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="survey" class="doc_header"><code>class</code> <code>survey</code><a href="https://github.com/brockmanmatt/OpenAISurveyWrapper/tree/master/OpenAISurveyWrapper/survey.py#L10" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>survey</code>(<strong><code>outdir</code></strong>=<em><code>'queries'</code></em>) :: <a href="/OpenAISurveyWrapper/wrapper"><code>wrapper</code></a></p>
+</blockquote>
+<p>wrapper on the API to load in survey definitions
+a format for displaying</p>
+<p>self.myFormat: a function to format a prompt</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">term</span> <span class="o">=</span> <span class="s2">&quot;Federal Budget&quot;</span>
+<span class="n">definition</span><span class="o">=</span><span class="s2">&quot;refers to mentions of how the federal government budgets and spends its money.&quot;</span>
+<span class="n">post</span> <span class="o">=</span> <span class="s2">&quot;the irish are heavy drinkers&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp</span> <span class="o">=</span> <span class="n">survey</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ls</span> <span class="o">../</span><span class="n">gpt3</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>CommaComparisonChart.png        facebook_examples.csv
+DollarCommaNocomma.png          key.json
+FullCommaNoCommaSpace.png       labeledexamples.csv
+Is Polarization a Myth.pdf      no commas.json
+TruncatedCommaNoCommaSpace.png  pypirc
+combinedata.forml.xlsx          spaces.json
+commas.json
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp</span><span class="o">.</span><span class="n">add_key</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;../gpt3/key.json&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">))[</span><span class="s2">&quot;key&quot;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp</span><span class="o">.</span><span class="n">addDefinition</span><span class="p">(</span><span class="n">term</span><span class="p">,</span> <span class="n">definition</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;../combinedata.forml.xlsx&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp</span><span class="o">.</span><span class="n">loadExamplesFromDataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="s2">&quot;classification&quot;</span><span class="p">]])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp</span><span class="o">.</span><span class="n">tryLabels</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A post is about Federal Budget if it refers to mentions of how the federal government budgets and spends its money. Consider the following post:
+post: &#34;{}&#34;
+q: Does this post primarily about Federal Budget (yes or no)?
+a:
+before
+ Yes
+ yes
+ yes
+ No
+ No
+ No
+ No
+ Yes
+ Yes
+ No
+ yes
+ No
+ No
+ Yes
+ yes
+ No
+ yes
+ Yes
+ yes
+ yes
+after
+[&#39; Yes&#39;, &#39; yes&#39;, &#39; yes&#39;, &#39; No&#39;, &#39; No&#39;, &#39; No&#39;, &#39; No&#39;, &#39; Yes&#39;, &#39; Yes&#39;, &#39; No&#39;, &#39; yes&#39;, &#39; No&#39;, &#39; No&#39;, &#39; Yes&#39;, &#39; yes&#39;, &#39; No&#39;, &#39; yes&#39;, &#39; Yes&#39;, &#39; yes&#39;, &#39; yes&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp</span><span class="o">.</span><span class="n">labeled</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>data</th>
+      <th>label</th>
+      <th>Federal Budget</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>834</td>
+      <td>Why is it that we keep having mass shooting af...</td>
+      <td>gun control</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>2110</td>
+      <td>Twana</td>
+      <td>none</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>2516</td>
+      <td>The new people getting their info correct and ...</td>
+      <td>trump as issue</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>I posted this a couple of years ago: The Monke...</td>
+      <td>drugs</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>2452</td>
+      <td>So a “white nationalist” group that’s never be...</td>
+      <td>racial equality</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>2450</td>
+      <td>As an avid RV'er I will be driving right by Ki...</td>
+      <td>racial equality</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>597</td>
+      <td>CRIMES OF THE PUTIN REGIME AGAINST HUMANITY  B...</td>
+      <td>foreign affairs</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>1255</td>
+      <td>I think it's sooo good to see him that he was ...</td>
+      <td>none</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>1940</td>
+      <td>... who's been watching "Magic Mike" on my Net...</td>
+      <td>none</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>2223</td>
+      <td>#ITfavorites #entry cc cream</td>
+      <td>none</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>342</td>
+      <td>Insignificant response to climate change</td>
+      <td>energy and environment</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>1855</td>
+      <td>Another amazing testimony of my tea!!  Who is ...</td>
+      <td>none</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>602</td>
+      <td>Tonight as I was watching our President making...</td>
+      <td>foreign affairs</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>1264</td>
+      <td>Political and Social Issues in Itself</td>
+      <td>none</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>331</td>
+      <td>global warming</td>
+      <td>energy and environment</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>850</td>
+      <td>that a free open market doesn't work in the me...</td>
+      <td>healthcare</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>179</td>
+      <td>,lack of jobs</td>
+      <td>economy</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>1196</td>
+      <td>Everyone is to worried about what other people...</td>
+      <td>none</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>1222</td>
+      <td>Undecided</td>
+      <td>none</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>335</td>
+      <td>climate change</td>
+      <td>energy and environment</td>
+      <td>yes</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp</span><span class="o">.</span><span class="n">definitions</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;Federal Budget&#39;: &#39;refers to mentions of how the federal government budgets and spends itsmoney. Do not label state funds or expenditures as federal. Concepts associated with the federal budget are commonly the federal deficit, national debt and military spending.&#39;}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tmp</span><span class="o">.</span><span class="n">formatQuery</span><span class="p">(</span><span class="n">term</span><span class="p">,</span> <span class="n">definition</span><span class="p">,</span><span class="n">term</span><span class="p">,</span> <span class="n">post</span><span class="p">,</span> <span class="n">term</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;A post is about Federal Budget if it refers to mentions of how the federal government budgets and spends itsmoney. Do not label state funds or expenditures as federal. Concepts associated with the federal budget are commonly the federal deficit, national debt and military spending. Consider the following post:\npost: &#34;Federal Budget&#34;\nq: Does this post discuss the irish are heavy drinkers (yes or no)?\na:&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>text</th>
+      <th>type</th>
+      <th>classification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>We have problems with immigrations.  The child...</td>
+      <td>survey</td>
+      <td>immigration</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Immigrations.</td>
+      <td>survey</td>
+      <td>immigration</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>The deficit!</td>
+      <td>survey</td>
+      <td>federal budget</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Deficit</td>
+      <td>survey</td>
+      <td>federal budget</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>The deficit</td>
+      <td>survey</td>
+      <td>federal budget</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>2615</td>
+      <td>So the refs get rings, too, right???</td>
+      <td>post</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>2616</td>
+      <td>Lori Colello</td>
+      <td>post</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>2617</td>
+      <td>14  The LORD shall fight for you, and ye shall...</td>
+      <td>post</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>2618</td>
+      <td>#ITfavorites #entry cc cream</td>
+      <td>post</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>2619</td>
+      <td>Guilty😑</td>
+      <td>post</td>
+      <td>none</td>
+    </tr>
+  </tbody>
+</table>
+<p>2620 rows × 3 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 

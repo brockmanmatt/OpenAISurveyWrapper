@@ -1,0 +1,49 @@
+{
+    "prompt": "A post is about Federal Budget if it refers to mentions of how the federal government budgets and spends itsmoney. Do not label state funds or expenditures as federal. Concepts associated with the federal budget are commonly the federal deficit, national debt and military spending. Consider the following post:\npost: \"{}\"\nq: Does this post primarily about Federal Budget (yes or no)?\na:",
+    "data": {
+        "queries": [
+            "Dont know",
+            "our 4 issue is crime  across america",
+            "Healthcare",
+            "It's really sad but the highlight of my day was finding these. At least my addiction won't kill me! Unless Zach strangles me for buying all of them !",
+            "Not sure ",
+            "It\u2019s Oklahoma\u2019s Turn to Strike ",
+            "illegal immigrants",
+            "impeaching trump",
+            "National security.  We don't want another 9.11 and he have to secure the borders and prevent people who want to do us harm from being ableto",
+            "Trump again, 5th time's a charm. if Congress had any balls, they'd impeach him. they are all up his butt big time. dumb jerks.",
+            "May we presume the three generals have been promoted to higher positions by Kim Jong Un? ",
+            "Giving aid to other countries rather than citizens at home who need help",
+            "9",
+            "Healthcare",
+            "Illegal drugs,such as cocaine and the like.",
+            "It is a beautiful clear morning here on the swing. A morning that makes a man proud to be alive. I never tire of the peace, serinity, and beauty of these mountain views. I love being 10 minutes from Walmart but a thousand miles from the rest of the world. It's the best of both worlds.",
+            "Education. We're at a point where educators have lost control of the classroom. ",
+            "N.a",
+            "Health insurance ",
+            "Public infrastructure has been poorly maintained and is in need of sweeping retrofitting, repairs, renovations, and replacements"
+        ],
+        "preds": [
+            " yes",
+            " yes",
+            " No",
+            " No.",
+            " yes",
+            " No",
+            " No",
+            " yes",
+            " Yes",
+            " No.",
+            " No",
+            " No",
+            " yes",
+            " No",
+            " No.",
+            " No.",
+            " No.",
+            " yes",
+            " No",
+            " No"
+        ]
+    }
+}

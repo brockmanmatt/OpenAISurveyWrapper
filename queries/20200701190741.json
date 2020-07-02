@@ -1,0 +1,49 @@
+{
+    "prompt": "A post is about Federal Budget if it refers to mentions of how the federal government budgets and spends itsmoney. Do not label state funds or expenditures as federal. Concepts associated with the federal budget are commonly the federal deficit, national debt and military spending. Consider the following post:\npost: \"{}\"\nq: Does this post directly discuss Federal Budget (yes or no)?\na:",
+    "data": {
+        "queries": [
+            "We need Medicare for All: A conversation with Sen. Bernie Sanders  Join us for a special conversation with Sen. Bernie Sanders at 10:15 a.m. PT /1:15 p.m. ET on Friday, Sept. 22.  Click below to RSVP:   RSVP \u25ba  We have some exciting news. Progressive champion Sen. Bernie Sanders is coming to CREDO\u2019s office on Friday, Sept. 22 for a special conversation about next steps in the fight for Medicare for All.  We will stream the conversation on Facebook Live, and we hope you can join us.  Click here to RSVP. We\u2019ll send you an email linking to the conversation right when it starts.   We need Medicare for All: A conversation with Sen. Bernie Sanders  The fight for universal health coverage is picking up steam. Earlier this week, Sen. Sanders introduced a Medicare for All bill in the Senate, and 15 Democrats including Sens. Elizabeth Warren, Jeff Merkley, Kamala Harris, Al Franken and Kirsten Gillibrand have already signed on as co-sponsors. Former President Jimmy Carter and former Vice President Al Gore also recently came out in support of a national single-payer health insurance plan. Even Senate Minority Leader Chuck Schumer is now indicating that \u201csingle-payer\u201d needs to be \u201con the table\u201d for the agenda of the Democratic Party.  More than 264,000 CREDO members have signed a petition demanding that all Democrats unite behind single-payer health care. Now, we need to keep the momentum going. CREDO is all in for Medicare for All \u2013 are you?  Join us on Friday, Sept. 22 to hear from Sen. Sanders about where we go from here. Click the link below to RSVP.  https://act.credoaction.com/sign/sanders-conversation-medicareforall/?t=7&akid=24998%2E13243151%2ECtNMUJ  We hope you can join us,  Murshed Zaheed, Political Director CREDO Action from Working Assets  Click below to RSVP:   RSVP \u25ba",
+            "Law",
+            "HIMNO DE ACCI\u00d3N DE GRACIAS Salmo 138     Te doy gracias, Yahveh, de todo coraz\u00f3n, pues t\u00fa has escuchado las palabras de mi boca. En presencia de Los Angeles canto Salmos para ti, hacia tu Santo Templo me arrodillo. Doy gracias a tu nombre por tu amor y tu verdad, pues la promesa ha superado tu credibilidad. El d\u00eda en que grite, t\u00fa me escuchaste, aumentaste la fuerza en mi alma. Te dan gracia, Yahveh, todos los reyes de la tierra, porque oyen las promesas de tu boca; !que grande la gloria de Yahveh! El alt\u00edsimo es Yahveh, y ve al humilde, al que se cree superior le conoce desde lejos. Si ando en medio de angustia, t\u00fa me das la vida, frente a la c\u00f3lera de mis enemigos, extiendes tu la mano y tu diestra me salva: Yahveh lo acabar\u00e1 todo por mi. Oh Yahveh, es eterno tu amor, no dejes la obra de tus manos.  GLORIA A TI SE\u00d1OR",
+            "Immigration why take everyone out when we can learn to accept and education we need to pay teacher more medical free for all citizens ",
+            "\"Never give up on what you love\" Vivica Neal  #NieceDroppingKnowledge",
+            "too much political correctness",
+            "The most important issue would be humanity, whether it be in terms of immigrant or Americans that live here already.",
+            "No GOD anymore ",
+            "terrorist treats preventing and taking them down",
+            "The true cost of the terror kites: crops, wildlife and nature preserves.",
+            "War",
+            "Taxes on poor people.",
+            "not drug testing for public aide",
+            "Small businesses trying to improve",
+            "Portion of east fa\u00e7ade of Palais de Justice building, patriotically lit #bluewhitered every night. #paris #vivelafrance",
+            "So happy to be home for a hot minute!! Beautiful summer day!!!",
+            "Taxes",
+            "We do not adequately restrict access to firearms.",
+            "pollution needs to be solved for surbvival",
+            "Had a great time tonight with friends. Thank you Ignacio Ariza and Byron Craig James-Ariza!!!\u2019"
+        ],
+        "preds": [
+            " yes",
+            " No",
+            " Yes.",
+            " No",
+            " No.",
+            " No",
+            " No, it does not.",
+            " No",
+            " No",
+            " No.",
+            " No",
+            " No.",
+            " No",
+            " No",
+            " No.",
+            " No.",
+            " No",
+            " No.",
+            " No",
+            " No."
+        ]
+    }
+}

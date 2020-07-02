@@ -1,0 +1,49 @@
+{
+    "prompt": "Abortion is the ending of a pregnancy by removal or expulsion of an embryo or fetus. There is a debate amongst pro-life and pro-choice groups as to whether the medical procedure should be legal in the United States and how easy access to abortions should be.\npost: {}\nq: is this post about Abortion?\na:",
+    "data": {
+        "queries": [
+            "The country needs to support President Trump and let him do his job. He is doing a great job and needs to have the support of all Americians",
+            "If anyone wants access to \"The Freedom Traders\" Facebook chat, message me or comment down below.   We'll talk about trades we're taking, you can ask anyone for help, etc. We're about to blow Freedom Traders UP!!\ud83d\udd25\ud83d\udd25",
+            "Wonderful seeing my aunt, uncle, and cousins and their families.  However, I might resort to alcoholism everytime I have to hear the third degree from one of my siblings.",
+            "Lack of trust or faith in God/Christ. Too much faith in humans. Not saying we shouldn't trust each other but people except super-human @time",
+            "Welfare",
+            "education",
+            "GOV ISSURES",
+            "SMILE OF THE DAY The High Price Of Silence  While her husband was busy at work one day, a bored housewife took a lover into her bedroom for some illicit fun, completely unaware that her nine year old son was silently hiding in the closet. And when her husband came home unexpectedly, she desperately hid her forbidden lover in the very same closet. The boy now had company, and broke the ice by whispering into the man\u2019s ear:  \u201cDark in here, isn\u2019t it, sir.\u201d Man: \u201cYes it is.\u201d Boy: \u201cI have a baseball.\u201d Man: \u201cThat\u2019s nice.\u201d  Boy: \u201cWant to buy it?\u201d Man: \u201cNo, thanks.\u201d Boy: \u201cMy dad\u2019s right outside.\u201d Man: \u201cOK, how much?\u201d Boy: \u201c250 dollars.\u201d  After a few weeks, it happened again \u2013 the boy\u2019s father came home early, and the boy and the mom\u2019s lover ended up in the closet together.  Boy: \u201cDark in here.\u201d Man: \u201cYes, it is.\u201d Boy: \u201cI have a baseball glove.\u201d Man: \u201cThat\u2019s nice.\u201d Boy: \u201cWant to buy it?\u201d Man: \u201cI really don\u2019t.\u201d Boy: \u201cI\u2019ll tell.\u201d Man: \u201cHow much?\u201d Boy: \u201c750 dollars.\u201d Man: \u201cFine.\u201d  A few days later, the father said to his boy, \u201cGrab your glove. Let\u2019s go outside and toss the baseball!\u201d The boy said, \u201cI can\u2019t. I sold them.\u201d The father asked, \u201cHow much did you sell them for?\u201d The son said, \u201c1,000 dollars.\u201d The father said, \u201cThat\u2019s terrible to over-charge your friends like that. That is way more than those two things cost. I\u2019m going to take you to church and make you confess.\u201d  They went to church and the father alerted the priest, and made the little boy sit in the confession booth and closed the door. The boy said, \u201cDark in here.\u201d  The priest said, \u201cOh, don\u2019t start that again!\u201d",
+            "Securing Social Security and Medicare.",
+            "Unity. We need unity. ",
+            "Gerrymandering and voting rights being taken away from underprivileged minorities ",
+            "social security viability",
+            "We see ourselves as the best country, giving us ourself power that we have not earned",
+            "53yrs ago today the Nation Of Islam and the FBI conspired together and took out a great man . R.I.P.  el-Hajj Malik el-Shabazz aka Malcolm X. May 19, 1925 - Feb 21, 1965 (age 39)",
+            "I will never vote for Gov Scott again if he tries to stop oil drilling off Florida",
+            "People like Rockefeller and Rothschild have way too much control over the country",
+            "It is terrible to see protesters in the face of conservative legislatures, but it is just as bad to see protesters from the other side of the philosophical isle  show extremely bad taste in expressing their discontent. These folks , no matter their political persuasion are trash and do not help constructively in the ongoing national discourse.  ---  ",
+            "Still true. Big O ...worst president in my memory.",
+            "\ud83d\ude33\ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude02\ud83d\ude02",
+            "education"
+        ],
+        "preds": [
+            " yes\nq: is this post about the President",
+            " No.\nq: Why are you talking about",
+            " yes\nq: is this post about the third",
+            " yes\npost: The act of killing a person",
+            " yes\npost: Welfare\nq: is this",
+            " yes\nq: is this post about the education",
+            " yes\nq: is this post about the government",
+            " yes\npost: SMILE OF THE DAY",
+            " yes\nr: Abortion is the ending of a",
+            " No.\nq: then what is it about",
+            " yes\n\nThe United States has a long history",
+            " yes\npost: social security viability\nq:",
+            " yes\nq: is this post about the United",
+            " yes it is.\npost: The United States",
+            " yes\npost: I will never vote for Gov",
+            " yes\npost: People like Rockefeller and Rothschild have",
+            " yes\nq: is this post about the right",
+            " yes\npost: Still true. Big O ...",
+            " yes\nq: is this post about the medical",
+            " yes\nq: is this post about the education"
+        ]
+    }
+}
