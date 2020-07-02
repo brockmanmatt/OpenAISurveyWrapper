@@ -1,7 +1,7 @@
 {
   "OpenAISurveyWrapper": {
     "Overview": "/",
-    "wrapper module": "/wrapper",
-    "survey module": "/survey"
+    "survey module": "/evaluate",
+    "wrapper module": "/wrapper"
   }
 }

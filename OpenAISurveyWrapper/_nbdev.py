@@ -2,11 +2,12 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"wrapper": "00_wrapper.ipynb",
-         "survey": "01_survey.ipynb"}
+index = {"survey": "02_evaluate.ipynb",
+         "wrapper": "02_wrapper.ipynb"}
 
-modules = ["wrapper.py",
-           "survey.py"]
+modules = ["survey.py",
+           "evaluate.py",
+           "wrapper.py"]
 
 doc_url = "https://brockmanmatt.github.io/OpenAISurveyWrapper/"
 

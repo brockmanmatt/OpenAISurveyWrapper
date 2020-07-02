@@ -10,11 +10,11 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
+      title: survey module
+      url: /evaluate
+    - output: web,pdf
       title: wrapper module
       url: /wrapper
-    - output: web,pdf
-      title: survey module
-      url: /survey
     output: web
     title: OpenAISurveyWrapper
   output: web
