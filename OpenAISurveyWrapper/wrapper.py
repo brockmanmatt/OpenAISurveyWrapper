@@ -29,14 +29,15 @@ class wrapper:
         """
         self.autosave=status
 
-    def query(self, **kwargs):
+    def query(self, verbose=False, **kwargs):
         """
         send kwargs to the API
         """
 
         r=""
 
-        print(kwargs)
+        if verbose:
+            print(kwargs)
 
         r = openai.Completion.create(**kwargs)
 

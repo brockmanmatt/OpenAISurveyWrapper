@@ -39,7 +39,20 @@ class survey(wrapper.wrapper):
         """
         set definition of label to definition)
         """
-        self.definitions[label] = definition
+        try:
+            self.definitions[label]["definition"] = definition
+        except:
+            self.definitions[label]= {"definition":definition}
+
+    def addLabelPrompt(self, label:str, prompt:str):
+        """
+        set definition of label to definition)
+        """
+        try:
+            self.definitions[label]["prompt"] = prompt
+        except:
+            self.definitions[label] = {"prompt":prompt}
+
 
     def removeDefinition(self, label:str):
         """
@@ -62,17 +75,13 @@ class survey(wrapper.wrapper):
         prompt should be formated as "str {} str" to be able to use format
         to stick each query in
         """
-        print("before")
 
         results = []
         for query in queries:
-            r = self.query(prompt=prompt.format(query[:1500]), **self.kwargs)["choices"][0]["text"]
+            r = self.query(prompt=prompt.format(query[:1500]), verbose=verbose, **self.kwargs)["choices"][0]["text"]
             if verbose:
                 print(r)
             results.append(r)
-
-        print("after")
-        print(results)
         return results
 
     def tryLabels(self, n=20, overwrite=True, inplace=True, fewShot = 0, labels=[], verbose=False):
@@ -90,7 +99,8 @@ class survey(wrapper.wrapper):
 
         all_responses = {}
         for label in labels:
-                prompt = self.formatQuery(label, self.definitions[label],"{}", label)
+                #so trying to figure out how to generare the prompt on the fly, doesn't work that well
+                prompt = self.formatQuery(label, self.definitions[label]["definition"],"{}", label)
                 print(prompt)
                 responses = self.generateResponses(targets["data"].to_list(), prompt, verbose=verbose)
 
@@ -102,4 +112,33 @@ class survey(wrapper.wrapper):
                 targets[label] = responses
                 self.labeled = targets
         self.labeled = targets
+
+    def useTermPrompt(self, n=20, overwrite=True, inplace=True, fewShot = 0, labels=[], verbose=False):
+        """
+        for each label in labels, add to the
+        """
+        if len(labels) == 0:
+            labels = [x for x in self.definitions]
+
+        if n > 0:
+            targets = self.examples.sample(n)
+        else:
+            targets = self.examples.copy()
+
+
+        all_responses = {}
+        for label in labels:
+                prompt = self.definitions[label]["prompt"]
+                print(prompt)
+                responses = self.generateResponses(targets["data"].to_list(), prompt, verbose=verbose)
+
+                with open("{}/{}".format(self.outdir, datetime.datetime.now().strftime("%Y%m%d%H%m%S") + ".json"), "w") as fh:
+                    json.dump({"prompt":prompt, "data":{"queries":targets["data"].to_list(), "preds":responses}}, fh, indent=4)
+
+                all_responses[label]=responses
+
+                targets[label] = responses
+                self.labeled = targets
+        self.labeled = targets
+
 
