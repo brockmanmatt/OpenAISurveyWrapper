@@ -1,7 +1,9 @@
 {
   "OpenAISurveyWrapper": {
     "Overview": "/",
-    "survey module": "/evaluate",
-    "wrapper module": "/wrapper"
+    "wrapper module": "/wrapper",
+    "survey module": "/survey",
+    "Evaluate module": "/evaluateFromSearch",
+    "wait, try other": "/train_test_alcohol"
   }
 }
